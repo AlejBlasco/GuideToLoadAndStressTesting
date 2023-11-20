@@ -1,6 +1,10 @@
-﻿using ApiDemo.Application.Book.Queries;
+﻿using ApiDemo.Application.Book.Commands;
+using ApiDemo.Application.Book.Queries;
+using ApiDemo.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using System.Runtime.CompilerServices;
 
 namespace ApiDemo.Controllers;
 
@@ -36,5 +40,19 @@ public class BookController : ControllerBase
             return Ok(result);
         else
             return NotFound();
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Insert(Book request)
+    {
+        var result = await mediator.Send(new InsertBookCommand(request));
+        return Ok(result);
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> Update(Book request)
+    {
+        var result = await mediator.Send(new UpdateBookCommand(request));
+        return Ok(result);
     }
 }

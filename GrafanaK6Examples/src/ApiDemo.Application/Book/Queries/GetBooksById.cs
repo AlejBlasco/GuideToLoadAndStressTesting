@@ -2,16 +2,16 @@
 
 namespace ApiDemo.Application.Book.Queries;
 
-public record GetBooksByIdQuery : IRequest<Book>
+public record GetBooksByIdQuery : IRequest<Models.Book>
 {
     public Guid Id { get; set; } = Guid.Empty;
 }
 
-public class GetBooksByIdQueryHandler : IRequestHandler<GetBooksByIdQuery, Book>
+public class GetBooksByIdQueryHandler : IRequestHandler<GetBooksByIdQuery, Models.Book>
 {
-    public Task<Book> Handle(GetBooksByIdQuery query, CancellationToken cancellationToken)
+    public Task<Models.Book> Handle(GetBooksByIdQuery query, CancellationToken cancellationToken)
     {
-        var match = new Book()
+        var match = new Models.Book()
         {
             Id = query.Id,
             Name = $"El libro que buscabas",
