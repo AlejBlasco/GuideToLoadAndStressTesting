@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDemo", "src\ApiDemo\ApiDemo.csproj", "{A9D33193-F343-4FE8-8C71-B59AC1B90ACC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDemo", "src\ApiDemo\ApiDemo.csproj", "{A9D33193-F343-4FE8-8C71-B59AC1B90ACC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5FDBD415-7AF4-43C5-A29E-A9720BD1537F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDemo.Application", "src\ApiDemo.Application\ApiDemo.Application.csproj", "{E733FC1C-1354-4301-8EDE-F22664F30F42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDemo.Application", "src\ApiDemo.Application\ApiDemo.Application.csproj", "{E733FC1C-1354-4301-8EDE-F22664F30F42}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1FA02B74-0E5B-4EC6-BDD1-8CC67A13DA4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiDemo.k6Tests", "ApiDemo.k6Tests", "{E9D5F7BA-0E63-4DB9-8C76-CAB1E7AC6A68}"
+	ProjectSection(SolutionItems) = preProject
+		test\ApiDemo.Load&StressTests\load_test.js = test\ApiDemo.Load&StressTests\load_test.js
+		test\ApiDemo.Load&StressTests\stress_test.js = test\ApiDemo.Load&StressTests\stress_test.js
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDemo.Application.UnitTest", "test\ApiDemo.Application.UnitTest\ApiDemo.Application.UnitTest.csproj", "{896E8FC4-63C5-47AC-A051-5886A25CA5B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +33,10 @@ Global
 		{E733FC1C-1354-4301-8EDE-F22664F30F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E733FC1C-1354-4301-8EDE-F22664F30F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E733FC1C-1354-4301-8EDE-F22664F30F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896E8FC4-63C5-47AC-A051-5886A25CA5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896E8FC4-63C5-47AC-A051-5886A25CA5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896E8FC4-63C5-47AC-A051-5886A25CA5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896E8FC4-63C5-47AC-A051-5886A25CA5B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{A9D33193-F343-4FE8-8C71-B59AC1B90ACC} = {5FDBD415-7AF4-43C5-A29E-A9720BD1537F}
 		{E733FC1C-1354-4301-8EDE-F22664F30F42} = {5FDBD415-7AF4-43C5-A29E-A9720BD1537F}
+		{E9D5F7BA-0E63-4DB9-8C76-CAB1E7AC6A68} = {1FA02B74-0E5B-4EC6-BDD1-8CC67A13DA4C}
+		{896E8FC4-63C5-47AC-A051-5886A25CA5B8} = {1FA02B74-0E5B-4EC6-BDD1-8CC67A13DA4C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F8A33917-A518-46E0-B6B0-FDC20E069DA5}
