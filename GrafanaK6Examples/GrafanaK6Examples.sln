@@ -12,12 +12,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1FA02B74-0E5B-4EC6-BDD1-8CC67A13DA4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiDemo.k6Tests", "ApiDemo.k6Tests", "{E9D5F7BA-0E63-4DB9-8C76-CAB1E7AC6A68}"
-	ProjectSection(SolutionItems) = preProject
-		test\ApiDemo.Load&StressTests\load_test.js = test\ApiDemo.Load&StressTests\load_test.js
-		test\ApiDemo.Load&StressTests\stress_test.js = test\ApiDemo.Load&StressTests\stress_test.js
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiDemo.Application.UnitTest", "test\ApiDemo.Application.UnitTest\ApiDemo.Application.UnitTest.csproj", "{896E8FC4-63C5-47AC-A051-5886A25CA5B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiDemo.Application.UnitTest", "test\ApiDemo.Application.UnitTest\ApiDemo.Application.UnitTest.csproj", "{896E8FC4-63C5-47AC-A051-5886A25CA5B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
