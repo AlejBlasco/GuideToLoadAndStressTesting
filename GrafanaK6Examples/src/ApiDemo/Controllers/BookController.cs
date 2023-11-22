@@ -3,8 +3,6 @@ using ApiDemo.Application.Book.Queries;
 using ApiDemo.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.Runtime.CompilerServices;
 
 namespace ApiDemo.Controllers;
 
